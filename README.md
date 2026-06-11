@@ -37,7 +37,7 @@ CodeAlpha_Calculator/
 
     └── images/
 
-        ├── calculator.jpg
+    ├── calculator.jpg
 
 ## How to Run
 
