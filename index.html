@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Calculator | Jagruti Popali</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/jpeg" href="images/calculator.jpg">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title">
+        <h1>Modern Calculator</h1>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </div>
+
+    <div class="calculator">
+
+        <input type="text" id="display" readonly>
+
+        <div class="history-container">
+            <h3>History</h3>
+            <ul id="history"></ul>
+        </div>
+
+        <button class="clear-history" onclick="clearHistory()">
+            Clear History
+        </button>
+
+        <div class="buttons">
+
+            <button class="operator" onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="deleteLast()">⌫</button>
+            <button class="operator" onclick="append('%')">%</button>
+            <button class="operator" onclick="append('/')">÷</button>
+
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button class="operator" onclick="append('*')">×</button>
+
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button class="operator" onclick="append('-')">−</button>
+
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button class="operator" onclick="append('+')">+</button>
+
+            <button onclick="append('0')">0</button>
+            <button onclick="append('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+        </div>
+        
+    </div>
+
+</div>
+
+<p class="footer">
+    Designed by Jagruti Popali
+</p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
